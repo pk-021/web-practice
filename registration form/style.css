@@ -1,0 +1,116 @@
+#bigbox
+{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-inline: auto;
+
+margin-top: 100px;
+width: 80%;
+max-width: 500px;
+min-height: 500px;
+gap: 30px;
+padding-top: 30px;
+padding-bottom: 30px;
+
+color:rgb(52, 58, 58);
+background-color: rgb(228, 202, 220);
+border-radius: 30px;
+
+}
+
+
+.namefields
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap:30px;
+}
+
+.FormFieldRow
+{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    font-family:helvetica;
+}
+
+.FormField
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-family: helvetica;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;;
+}
+
+.namefields > *
+{
+    width: 100%;
+}
+
+.heading *
+{
+    align-items: center;
+    text-align: center;
+    font-family:Helvetica;
+}
+
+.FormFieldRow >*
+{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+button{
+    font-family: Helvetica;
+    background-color: rgba(168, 121, 167, 0.871);
+    font-size: medium;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width:100px;
+    margin-bottom: 40px;
+}
+button:active
+{
+    background-color: rgba(211, 168, 198, 0.871);
+}
+
+
+h1
+{
+    font-size: 30px;
+    color:rgb(151, 126, 153);
+    padding-bottom: 10px;
+    margin-bottom:0%;
+}
+
+input[type="text"]
+{
+    border-radius: 5px;
+    height:30px;
+    border:none;
+    padding-inline: 2ch;
+}
+
+#startfield
+{
+    margin-top: 40px;
+}
+
+#endfield
+{
+    margin-bottom:40px;
+}
