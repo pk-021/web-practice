@@ -1,0 +1,49 @@
+body
+
+{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(211, 160, 194);
+}
+
+.wrapper
+{
+    position: relative;
+}
+
+.container
+{
+    display:flex;
+    gap:30px;
+}
+
+
+
+.galleryimg
+{
+    height: 250px;
+    width:200px;
+    border:5px solid white;
+    border-radius: 10px ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    object-fit: cover;
+    filter:grayscale(1);
+    transition: 0.2s;
+}
+
+.galleryimg:hover
+{
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
+
+#title
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:100px;
+    position:absolute;
+    top:-150px;
+    color:white;
+}
