@@ -1,0 +1,52 @@
+*
+{
+    font-family: Helvetica,Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: calc(100vh - 16px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container
+{
+    width:80%;
+}
+
+.accordion
+{
+    background-color: rgb(245, 245, 245);
+    padding: 15px;
+    padding-right: 0px;
+    width:100%;
+}
+
+.collapsable
+{
+    background-color: rgb(245, 245, 245);
+    max-height: 0;
+    padding: 0 15px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out
+}
+
+.accordion:hover
+{
+    background-color: rgb(233, 233, 233);
+    
+}
+
+.visible
+{
+    background-color: rgb(233, 233, 233);
+}
+
+.collapsable p
+{
+    height: fit-content;
+    width:100%;
+    text-align: left;
+}
