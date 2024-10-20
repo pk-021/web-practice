@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Overlay</title>
+</head>
+
+<body>
+
+    <button id="pause" onclick="showOverlay()">PAUSE</button>
+
+    <div class="container" id ="overlay">
+        <a href="javascript:void(0)" id="closeBtn" onclick="hideOverlay()">X</a>
+
+        <div class="menu">
+            <h1> Resume</h1>
+            <h1> Options</h1>
+            <h1> Save</h1>
+            <h1> Load</h1>
+        </div>
+    </div>
+
+</body>
+    <script>
+        function hideOverlay()
+        {
+            document.getElementById("overlay").style.width = "0%"
+            
+        }
+
+        function showOverlay()
+        {
+            document.getElementById("overlay").style.width = "100%"
+        }
+    </script>
+</html>

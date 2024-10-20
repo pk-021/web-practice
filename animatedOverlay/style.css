@@ -1,0 +1,75 @@
+body {
+    font-family: "inter", sans-serif;
+    color: grey;
+    background-color: rgb(221, 223, 238);
+    height: 100vh;
+    margin: 0;
+    padding:0;
+    position: relative;
+}
+
+
+#closeBtn {
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    color:grey;
+    padding:5%;
+    font-size: xx-large;
+}
+
+#closeBtn:hover
+{
+    color:white;
+}
+
+.menu {
+    position: absolute;
+    width: fit-content;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#overlay
+{
+    position: relative;
+    height: 100%;
+    width:0%;
+    overflow: hidden;
+    background-color: rgba(11, 12, 21, 0.95);
+    transition:width 0.3s ease-out;
+
+
+}
+
+#pause
+{
+    background-color: rgb(28, 31, 44);
+    border:none;
+    outline:none;
+    color:white;
+    font-size:xx-large;
+    padding:50px 100px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-100%);
+}
+
+#pause:active
+{
+    background-color:rgb(44, 48, 70) ;
+}
+
+
+h1
+{
+    transition: color 0.1s ease-out;
+}
+h1:hover
+{
+    color:white;
+    cursor: pointer;
+}
