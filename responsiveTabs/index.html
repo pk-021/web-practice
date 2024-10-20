@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Tab_responsive</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    
+    <div class="topnav" id="myTopnav">
+
+        <a class="tabLink" id="default" href="#">First</a>
+        <a class="tabLink" href="#">Second</a>
+        <a class="tabLink" href="#">Third</a>
+        <a class="tabLink" href="#">Fourth</a>
+        <a href="javascript:void(0)" class="icon" onClick="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="hamBurger">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </a>
+
+    </div>
+
+
 </body>
+
+<script>
+    function toggleMenu() {
+        var x = document.getElementById("myTopnav");
+        x.classList.toggle("smallScreen")
+
+    }
+</script>
+
 </html>

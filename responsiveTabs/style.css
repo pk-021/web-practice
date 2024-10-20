@@ -1,0 +1,79 @@
+body {
+    font-family: 'Roboto';
+    margin: 0px;
+    background-color: grey;
+    color: black;
+
+}
+
+.topnav {
+    position: relative;
+    background-color: rgb(29, 32, 30);
+    display: flex;
+}
+
+.tabLink {
+    background-color: inherit;
+    text-decoration: none;
+    padding: 20px;
+    min-width: 60px;
+    color: white;
+}
+
+#default {
+    display: block;
+}
+
+.tabLink:hover {
+    background-color: rgb(144, 224, 24);
+    color: black;
+}
+
+/* handling icona */
+.icon:hover {
+    background-color: rgb(144, 224, 24);
+}
+
+.icon{
+    position: absolute;
+    display: block;
+    right: 0px;
+    height: 59px;
+    padding: 0 10px;
+}
+
+.hamBurger {
+    margin-top:10px;
+    width: 40px;
+    color: white;
+    display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    body {
+        background-color: grey;
+    }
+
+    .hamBurger {
+        display: block;
+    }
+
+    .tabLink
+    {   
+        width: 100%;
+        display: none;
+    }
+
+    .topnav.smallScreen .tabLink {
+        display: block;
+    }
+
+    .topnav.smallScreen {
+        flex-direction: column;
+        width: 100%;
+    }
+
+} 
