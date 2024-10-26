@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Searching</title>
+</head>
+
+<body>
+    <div class="row">
+        
+        <div class="left" id="left">
+            
+            <div class="backSection">
+                <h2>Menu</h2>
+                
+                
+                <a href="javaScript:void(0)" onclick="hideCategories()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="backArrow">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                    </svg>
+                </a>
+                
+                
+            </div>
+            
+            
+            <input type="text" id="mySearch" placeholder="Search.." title="Type a category" onkeyup="lookup()">
+            
+
+            <ul id="categories">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">jQuery</a></li>
+                <li><a href="#">SQL</a></li>
+                <li><a href="#">Bootstrap</a></li>
+                <li><a href="#">Node.js</a></li>
+            </ul>
+        </div>
+        
+        
+        <div class="right">
+            
+            <a href="javaScript:void(0)" onclick="showCategories()" class="hamBurger" id="hamBurger">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+        
+            </a>
+            <h2 class="pageTitle">Page Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum velit architecto est praesentium magni
+                cumque. Minus iste, aspernatur nam officiis nostrum error ratione quos eveniet similique voluptates
+                accusamus deleniti voluptatem.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed dolorem dicta praesentium possimus, facere
+                    minima sint, quis nemo, ex optio sapiente! Esse nemo velit eligendi deserunt modi. Incidunt, saepe
+                    cupiditate. text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+                    <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+                    <p>Some text..</p>
+                </div>
+            </div>
+            
+            
+        </div>
+
+</body>
+
+<script>
+
+    let input, filter, ul, li, a, i, len;
+    ul = document.getElementById("categories");
+    li = ul.getElementsByTagName('li');
+    a = ul.getElementsByTagName('a');
+
+    len = a.length;
+    function lookup() {
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+
+        for (i = 0; i < len; i++) {
+            if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            }
+            else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+
+
+
+        function hideCategories() {
+        document.getElementById("left").classList.remove("active");
+        document.getElementById("hamBurger").classList.remove("active");
+    }
+
+    function showCategories() {
+        document.getElementById("left").classList.add("active");
+        document.getElementById("hamBurger").classList.add("active")
+    }
+
+    hideCategories(); // Hide menu on page load
+
+
+</script>
+
+</html>
