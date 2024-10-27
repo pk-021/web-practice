@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card {
+        @apply opacity-0 bg-slate-900 px-4 py-4 mx-8 hover:shadow-slate-800/80 hover:shadow-xl rounded-lg transition-all
+        lg:w-[500px] lg:h-96 translate-x-60 duration-500;
+    
+    }
+
+    .show
+    {
+        @apply opacity-100 translate-x-0;
+    }
+}
